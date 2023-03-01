@@ -1,0 +1,107 @@
+.hero {
+    background: $colorCream;
+}
+
+.hero-wrapper {
+    background: url("../img/background/watch-with-bg.png") no-repeat right 147px center;
+    background-size: contain;
+}
+
+.hero-text-wrapper {
+    position: relative;
+    padding: 236px 0 236px 62px;
+}
+
+.hero-title {
+    position: relative;
+    font-size: 45px;
+    font-family: $fontPlayfairDisplay;
+    font-weight: normal;
+    margin-bottom: 16px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: -57px;
+        bottom: 22px;
+        height: 1px;
+        width: 50px;
+        background: $colorDark;
+    }
+}
+
+.hero-subtitle {
+    font-family: $fontPlayfairDisplay;
+    font-weight: normal;
+    margin-bottom: 39px;
+}
+
+.hero-description {
+    margin: 23px 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: rgba(#1B1A17, 0.82);
+    margin-bottom: 64px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: $colorBrownTwo;
+    color: $colorWhite;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 38px 27px;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: 0 0 10px $colorBrown;
+        background: $colorBrown;
+    }
+}
+
+.hero-param {
+    position: absolute;
+    font-family: $fontPrata;
+    font-size: 16px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 50px;
+        background: $colorDark;
+    }
+}
+
+.hero-param-left {
+    @extend .hero-param;
+
+    &:before {
+        right: -64px;
+        bottom: 12px;
+    }
+}
+
+.hero-param-right {
+    @extend .hero-param;
+
+    &:before {
+        left: -64px;
+        bottom: 12px;
+    }
+}
+
+.hero-param-price {
+    @extend .hero-param-left;
+
+    top: 138px;
+    right: 593px;
+}
+
+.hero-param-diameter {
+    @extend .hero-param-right;
+
+    top: 647px;
+    right: 16px;
+}

@@ -1,0 +1,58 @@
+.header {
+    background: $colorCream;
+}
+
+.header-title {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    color: $colorBrown;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.header-menu-item {
+    @include fontStyle($fontRoboto, $fontNormal, 14);
+    @include fontLh(16);
+}
+
+.header-menu-item-link {
+    display: block;
+    padding: 35px 31.5px 37px;
+    color: $colorBrown;
+    font-size: 14px;
+
+    &:hover {
+        background: darken($colorCream, 10%);
+    }
+}
+
+.header-icons {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: flex;
+}
+
+.header-icons-item {
+    display: inline-block;
+    padding: 0 11px;
+}
+
+.header-icons-item-badge-wrapper {
+    position: relative;
+}
+
+.header-icons-item-badge {
+    position: absolute;
+    top: -5px;
+    right: 3px;
+    background: #E6C8B4;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 8px;
+    padding: 3px 6px;
+}

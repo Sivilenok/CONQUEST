@@ -1,0 +1,17 @@
+@import './_fonts';
+
+@import './_vars';
+
+@import './_mixins';
+
+// reset and standard styles
+@import './_adjustments';
+
+// Blocks
+
+@import './blocks/_header';
+@import './blocks/_hero';
+@import './blocks/_popular';
+@import './blocks/_banner';
+@import './blocks/_screen';
+@import './blocks/_footer';

@@ -1,0 +1,75 @@
+.footer {
+  background: $colorBrownTwo;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.footer__logo-link {
+  @include fontStyle($fontRoboto, $fontNormal, 12);
+  @include fontLh(14);
+  color: rgba(255, 255, 255, 0.75);
+  &:hover {
+    @include transitionAll;
+    color: $colorCream;
+    box-shadow: 0px 0px 10px $colorCream;
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: $colorBrown;
+  }
+}
+
+.footer__logo {
+  margin: 0 0 15px;
+  &:hover {
+    @include transitionAll;
+    color: $colorCream;
+    box-shadow: 0px 0px 10px $colorCream;
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: $colorCream;
+  }
+}
+
+.footer__number {
+  margin: 15px 0;
+  @include fontStyle($fontRoboto, $fontNormal, 12);
+  @include fontLh(14);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__email {
+  @include fontStyle($fontRoboto, $fontNormal, 12);
+  @include fontLh(14);
+  color: rgba(255, 255, 255, 0.75);
+  &:hover {
+    @include transitionAll;
+    color: $colorCream;
+    box-shadow: 0px 0px 10px $colorCream;
+    border-radius: 5px;
+  }
+}
+
+.footer__title {
+  @include fontStyle($fontRoboto, $fontBold, 14);
+  @include fontLh(16);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $colorWhite;
+  margin: 32px 0;
+}
+
+.footer__item {
+  margin: 15px 0;
+
+  &-info {
+    position: relative;
+    bottom: -35px;
+  }
+}

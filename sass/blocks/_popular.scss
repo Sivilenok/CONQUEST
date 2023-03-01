@@ -1,0 +1,106 @@
+.popular {
+  background: $colorWhite;
+  padding: 35px 0;
+}
+.popular__title {
+  text-align: center;
+  @include fontStyle($fontPlayfairDisplay, $fontNormal, 32);
+  @include fontLh(43);
+  color: $colorDark;
+  margin: 35px 0 0;
+}
+
+.popular__models {
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+  margin: 25px;
+}
+
+.popular__item {
+  padding: 40px;
+}
+
+.popular__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 313px;
+  height: 313px;
+}
+.popular__bg-wrap {
+  position: relative;
+}
+
+.popular__bg-circle {
+  width: 313px;
+  height: 313px;
+}
+
+.popular__brand {
+  @include fontStyle($fontPlayfairDisplay, $fontBold, 14);
+  @include fontLh(24);
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__price {
+  @include fontStyle($fontPrata, $fontNormal, 12);
+  @include fontLh(16);
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+  margin: 10px 0;
+}
+.popular__price-wrap {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.popular__ruble {
+  width: 7.38px;
+  height: 10px;
+}
+
+.popular__wrap {
+  display: flex;
+}
+
+.popular__line {
+  width: 30px;
+}
+
+.popular__descr {
+  margin: 20px;
+  @include fontStyle($fontPlayfairDisplay, $fontNormal, 16);
+  @include fontLh(21);
+  color: $colorDark;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:active,
+  &:hover {
+    box-shadow: 0px 0px 10px $colorBrown;
+    background: $colorCream;
+    border-radius: 5px;
+  }
+}
+
+.popular__btn {
+  position: absolute;
+  right: 50px;
+  @include fontStyle($fontRoboto, $fontMedium, 16);
+  @include fontLh(19);
+  color: $colorBrownTwo;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 1px solid #c4c0b6;
+  padding: 11px 0;
+  &:active,
+  &:hover {
+    box-shadow: 0px 0px 10px $colorBrown;
+    background: $colorCream;
+    border-radius: 5px;
+  }
+}
